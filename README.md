@@ -41,7 +41,7 @@ You should see the message: `processing file django.po in /path_to_LC_MESSAGES..
 
 You are ready! run the server and change to your languages!
 
-(see a demo live)[http://django-internationalization.daiech.com/]
+[see a live demo](http://django-internationalization.daiech.com/)
 
 ###How it works?
 Django internationalitation use L10n (localization) and i18n (internationalization), [see the docs](https://docs.djangoproject.com/en/1.5/topics/i18n/)

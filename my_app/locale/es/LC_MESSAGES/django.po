@@ -1,0 +1,43 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-08-25 02:15-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: views.py:8
+msgid "Hello world I am a translated text"
+msgstr "Hola mundo, soy un texto traducido"
+
+#: templates/base.html:5
+msgid "Hello, this is built with Django Internationalization"
+msgstr "Hola, esto está construido con la Internacionalización de Django"
+
+#: templates/base.html:16
+msgid "Hello world!"
+msgstr "Hola mundo!"
+
+#: templates/base.html:17
+msgid "Hello, this is my website. Enjoy it"
+msgstr "Hola, este es mi sitio web, Disfrutalo!"
+
+#: templates/base.html:36
+msgid "Switch language"
+msgstr "Cambiar idioma"
+
+#: templates/index.html:6
+msgid "My news"
+msgstr "Mis noticias"

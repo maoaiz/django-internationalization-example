@@ -1,7 +1,11 @@
 # Django settings for django_internationalization_example project.
-
+#encoding:utf-8
+import os.path
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
+
+PROJECT_PATH = os.path.realpath(".")
+URL_BASE = "http://localhost:8000"
 
 ADMINS = (
     # ('Your Name', 'your_email@example.com'),
@@ -124,6 +128,7 @@ INSTALLED_APPS = (
     # 'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
+    'my_app'
 )
 
 # A sample logging configuration. The only tangible logging
@@ -154,3 +159,11 @@ LOGGING = {
         },
     }
 }
+
+# Avaliable LANGUAJES in our project
+ugettext = lambda s: s
+LANGUAGES = (
+    ('en', ugettext('English')),
+    ('es', ugettext('Spanish')),
+    ('fr', ugettext('French')),
+)

@@ -1,0 +1,41 @@
+{% load i18n %}
+<!doctype html>
+<html>
+<head>
+	<title>{% trans "Hello, this is built with Django Internationalization" %}</title>
+	<style type="text/css">
+		body{margin: 0 auto;width: 80%}
+		body > header{text-align: center;margin: 20px 0;}
+		body > footer{text-align: right;}
+		article{margin: 10px 0;border: solid thin #dadada;padding: 10px}
+		.b{border:solid thin gray;}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>{% trans "Hello world!" %}</h1>
+		<p>{% trans "Hello, this is my website. Enjoy it" %}</p>
+	</header>
+	<div class="">
+		{%block body%}
+		{%endblock%}
+	</div>
+	<footer>
+		<div id="language-select">
+			<form action="/i18n/setlang/" method="post">
+				{% csrf_token %}
+				<input name="next" type="hidden" value="{{ redirect_to }}" />
+				<select name="language">
+				{% get_language_info_list for LANGUAGES as languages %}
+				{% for language in languages %}
+				<option value="{{ language.code }}"{% if language.code == LANGUAGE_CODE %} selected="selected"{% endif %}>
+				    {{ language.name_local }} ({{ language.code }})
+				</option>
+				{% endfor %}
+				</select>
+				<input type="submit" value="{% trans 'Switch language' %}" />
+			</form>
+		</div>
+	</footer>
+</body>
+</html>
